@@ -1,8 +1,8 @@
 import { Component } from 'react';
 // import MyComponent from './MyComponent';
-import Event from './Event';
-import Validation from './Validation';
-import LifeCycle from './LifeCycle';
+import Info from './hooks/InfoReducer';
+import UseReducerCounter from './hooks/UseReducerCounter';
+import Average from './hooks/AverageUseCallback';
 
 import './App.css';
 
@@ -26,10 +26,9 @@ class App extends Component {
         {name}
         {/* 컴포넌트 태그 사이에 들어가는 것은 children prop가 된다. */}
         {/* <MyComponent favoriteNum={123}>Children이다</MyComponent> */}
-        <Event />
-        <Validation />
-        <button onClick={this.handleClick}>랜덤 색상</button>
-        <LifeCycle color={this.state.color} />
+        <Info />
+        <UseReducerCounter />
+        <Average />
       </div>
     );
   }

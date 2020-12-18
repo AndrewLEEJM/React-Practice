@@ -56,6 +56,7 @@ export default class LifeCycle extends Component {
     };
     return (
       <div>
+        {/* 고의 에러: {this.props.missing.value} */}
         <h1 style={style} ref={(ref) => (this.myRef = ref)}>
           {this.state.number}
         </h1>
